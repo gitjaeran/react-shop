@@ -4,8 +4,12 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import sofa from "./img/파로마가구-소파.jpg";
 import bed from "./img/파로마가구-침대.jpg";
 import makeup from "./img/파로마가구-화장대.jpg";
+import data from "./data";
+import { useState } from "react";
 
 function App() {
+  let [furniture] = useState(data);
+
   return (
     <div className="App">
       <Navbar bg="light" data-bs-theme="light">
@@ -25,8 +29,8 @@ function App() {
         <div className="row">
           <div className="col-md-4">
             <img src={sofa} width="80%" alt="sofa" />
-            <h4>(파로마 PICK) 올라 헤드레스트 코모도 패브릭 4인 소파</h4>
-            <p>639,000원</p>
+            <h4>{furniture[0].title}</h4>
+            <p>{furniture[0].price}원</p>
           </div>
           <div className="col-md-4">
             <img src={bed} width="80%" alt="bed" />
