@@ -1,8 +1,5 @@
-.main-bg {
-  height: 400px;
-  background-image: url(./img/거실가구-파로마가구.jpg);
-  background-size: cover;
-  background-position: center;
+::-webkit-scrollbar {
+  display: none;
 }
 /***************/
 .App {

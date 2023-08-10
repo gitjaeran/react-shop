@@ -1,7 +1,12 @@
 import React from "react";
+import * as Style from "./css/MainBg";
 
 function MainBg() {
-  return <div className="main-bg"></div>;
+  return (
+    <Style.Layout>
+      <Style.MainImg />
+    </Style.Layout>
+  );
 }
 
 export default MainBg;
