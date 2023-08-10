@@ -2,6 +2,7 @@ import React from "react";
 import data from "../data";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import * as Style from "./css/FurnitureCard";
 
 function FurnitureCard() {
   let [furniture] = useState(data);
@@ -11,7 +12,7 @@ function FurnitureCard() {
   return (
     <div
       className="container"
-      style={{ marginTop: "50px", marginBottom: "80px" }}
+      style={{ marginTop: "80px", marginBottom: "80px" }}
     >
       <div className="row">
         {furniture.map(data => {
