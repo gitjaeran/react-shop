@@ -5,5 +5,7 @@ const Layout = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: #f9f9f9;
 `;
 export { Layout };

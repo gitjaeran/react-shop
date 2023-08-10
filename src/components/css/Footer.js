@@ -7,7 +7,6 @@ const Layout = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
-  margin-top: 100px;
 
   font-family: "Noto Sans";
   font-weight: 300;
