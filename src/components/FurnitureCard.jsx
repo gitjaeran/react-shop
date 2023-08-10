@@ -9,7 +9,10 @@ function FurnitureCard() {
   //navigate(1) => 한 페이지 앞으로, navigate(-1) => 이전 페이지로
 
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{ marginTop: "50px", marginBottom: "80px" }}
+    >
       <div className="row">
         {furniture.map(data => {
           return (

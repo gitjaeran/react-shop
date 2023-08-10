@@ -1,7 +1,14 @@
 import React from "react";
+import { Container, Navbar } from "react-bootstrap";
 
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <Navbar bg="light">
+      <Container>
+        <Navbar.Brand>Footer</Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Footer;

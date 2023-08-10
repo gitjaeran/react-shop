@@ -26,9 +26,9 @@ function Detail() {
   );
 }
 const Layout = styled.div`
-  width: 500px;
-  height: 800px;
-  background-color: beige;
+  /* width: 500px; */
+  /* height: 800px; */
+  /* background-color: beige; */
 `;
 
 export default Detail;
