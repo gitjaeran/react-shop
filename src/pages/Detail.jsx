@@ -13,8 +13,9 @@ function Detail() {
    *
    * useEffect(()=>{}) 재랜더링마다 코드실행
    * useEffect(()=>{},[]) mount시 1회 코드실행
+   * useEffect(()=>{return()=>{}}) useEffect 안의 코드 실행 전에 항상 실행
    * useEffect(()=>{return()=>{}},[]) unmount시 1회 코드실행
-
+   * useEffect(()=>{},[a]) a 변경시에만 실행
    */
 
   let [alert, setAlert] = useState(true);
