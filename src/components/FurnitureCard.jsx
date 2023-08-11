@@ -36,8 +36,11 @@ function FurnitureCard() {
         onClick={() => {
           axios
             .get("https://codingapple1.github.io/shop/data2.json")
-            .then(data => {
-              console.log(data);
+            .then(result => {
+              console.log(result.data);
+            })
+            .catch(() => {
+              console.log("요청 실패");
             });
         }}
       >
