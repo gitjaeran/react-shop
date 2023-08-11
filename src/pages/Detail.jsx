@@ -15,10 +15,16 @@ function Detail() {
   let [alert, setAlert] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    let timer = setTimeout(() => {
       setAlert(false);
     }, 3000);
-  });
+
+    //useEffect 동작 전 실행되는 코드(clean up function)
+    return () => {
+      //기존 동작 제거
+      clearTimeout(timer);
+    };
+  }, []);
 
   let [furniture] = useState(data);
   let { id } = useParams();
