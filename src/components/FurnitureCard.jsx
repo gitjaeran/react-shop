@@ -3,6 +3,7 @@ import data from "../data";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as Style from "./css/FurnitureCard";
+import axios from "axios";
 
 function FurnitureCard() {
   let [furniture] = useState(data);
@@ -31,6 +32,17 @@ function FurnitureCard() {
           );
         })}
       </div>
+      <button
+        onClick={() => {
+          axios
+            .get("https://codingapple1.github.io/shop/data2.json")
+            .then(data => {
+              console.log(data);
+            });
+        }}
+      >
+        버튼
+      </button>
     </div>
   );
 }

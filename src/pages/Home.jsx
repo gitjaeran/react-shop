@@ -10,8 +10,8 @@ function Home() {
   return (
     <Style.Layout>
       <MainBg />
-      {/* <FurnitureCard /> */}
       <Test />
+      <FurnitureCard />
       <MoreFurniture />
     </Style.Layout>
   );
