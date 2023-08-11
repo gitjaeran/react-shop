@@ -10,6 +10,11 @@ function Detail() {
    * - 어려운 연산
    * - 서버에서 데이터 가져오는 작업
    * - 타이머
+   *
+   * useEffect(()=>{}) 재랜더링마다 코드실행
+   * useEffect(()=>{},[]) mount시 1회 코드실행
+   * useEffect(()=>{return()=>{}},[]) unmount시 1회 코드실행
+
    */
 
   let [alert, setAlert] = useState(true);
@@ -20,6 +25,7 @@ function Detail() {
     }, 3000);
 
     //useEffect 동작 전 실행되는 코드(clean up function)
+    //mount시 실행되지 않고 unmount시 실행됨
     return () => {
       //기존 동작 제거
       clearTimeout(timer);
