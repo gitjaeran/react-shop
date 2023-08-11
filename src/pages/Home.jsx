@@ -5,6 +5,7 @@ import * as Style from "./css/Home";
 import MoreFurniture from "../components/MoreFurniture";
 import Test from "../components/Test";
 
+// top 버튼 만들기
 function Home() {
   return (
     <Style.Layout>

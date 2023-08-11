@@ -6,8 +6,6 @@ const Layout = styled.div`
   font-family: "Noto Sans";
   font-weight: 400;
   font-size: 22px;
-  /* color: gray; */
-  /* background-color: (248, 249, 250); */
 
   display: flex;
   justify-content: center;
@@ -16,7 +14,6 @@ const Layout = styled.div`
 
 const Container = styled.div`
   width: 1300px;
-  /* background-color: beige; */
   display: flex;
   align-items: center;
 `;
@@ -31,7 +28,6 @@ const Brand = styled.div`
 
 const MenuBox = styled.div`
   display: flex;
-  /* background-color: pink; */
   gap: 30px;
 `;
 
